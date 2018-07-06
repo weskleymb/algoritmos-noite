@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<script>
+let populacaoA = 80000;
+let populacaoB = 200000;
+
+let taxaA = 3 / 100;
+let taxaB = 1.5 / 100;
+
+for (let i=0; i<100; i++) {
+    populacaoA += populacaoA * taxaA;
+    populacaoB += populacaoB * taxaB;
+    if (populacaoA >= populacaoB) {
+        alert('Passaram-se ' + i + ' anos');
+        alert('População de A: ' + populacaoA);
+        alert('População de B: ' + populacaoB);
+        break;
+    }
+}
+</script>
+</html>
