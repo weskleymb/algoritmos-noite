@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<script>
+let numeros = [];
+let pares = [];
+let impares = [];
+
+for (let i=0; i<10; i++) {
+    numeros[i] = Math.ceil(Math.random() * 100);
+}
+
+for (let x=0; x<numeros.length; x++) {
+    if (numeros[x] % 2 == 0) {
+        pares.push(numeros[x]);
+    } else {
+        impares.push(numeros[x]);
+    }
+}
+
+alert(numeros);
+alert(pares);
+alert(impares);
+</script>
+</html>
